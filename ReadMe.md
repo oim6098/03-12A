@@ -10,3 +10,4 @@
 * new file SceneHW02 <- Queue ( Scenes ) / Green , Red 
 * new file Script <- Queue.cs / Ball.cs
 * new file Prefab <- Ball 
+* 수정중 
