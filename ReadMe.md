@@ -7,7 +7,7 @@
   * 이름: 신성우
 
 ### 2주차 Queue를 이용한 Memeory Pool 과제 
-* new file SceneHW02 <- Queue ( Scenes ) / Green , Red 
+* new file SceneHW02 / Green , Red 
 * new file Script <- Queue.cs / Ball.cs
 * new file Prefab <- Ball 
 * 수정중 
