@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d641b5f0a768c624bbea71bbcd7f7876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 839283741}
+  balls: {fileID: 839283741}
   greenBox: {fileID: 608751873}
   ballPrefab: {fileID: 8795273925086531527, guid: 434c71a74965b7148ac4053a1546144c, type: 3}
 --- !u!65 &608751875

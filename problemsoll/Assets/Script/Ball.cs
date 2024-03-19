@@ -9,7 +9,7 @@ public class Ball : MonoBehaviour
         // 빨간색 박스에 도달하면 공 삭제
         if (other.gameObject.CompareTag("RedBox"))
         {
-            Debug.Log("충돌됨");
+            Debug.Log("충돌 / 공 삭제");
             // Ball을 삭제
             Destroy(gameObject);
         }

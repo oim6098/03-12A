@@ -8,8 +8,8 @@ public class Queue : MonoBehaviour
         public bool isActive;
     }
 
-    private Queue<Bullet> bulletQueue = new Queue<Bullet>();
-    public GameObject bulletPrefab;
+    private Queue<Bullet> ballQueue = new Queue<Bullet>();
+    public GameObject balls;
     public GameObject greenBox;
     public GameObject ballPrefab;
 
@@ -18,14 +18,14 @@ public class Queue : MonoBehaviour
         // 초기화 시 총알을 10개 생성하여 Queue에 넣음
         for (int i = 0; i < 10; i++)
         {
-            GameObject bulletObject = Instantiate(bulletPrefab);
+            GameObject bulletObject = Instantiate(balls);
             bulletObject.SetActive(false);
             Bullet bullet = new Bullet
             {
                 gameObject = bulletObject,
                 isActive = false
             };
-            bulletQueue.Enqueue(bullet);
+            ballQueue.Enqueue(bullet);
         }
     }
 
@@ -41,9 +41,9 @@ public class Queue : MonoBehaviour
     void ShootBullet()
     {
         // Queue에서 총알을 꺼내서 발사
-        if (bulletQueue.Count > 0)
+        if (ballQueue.Count > 0)
         {
-            Bullet bullet = bulletQueue.Dequeue();
+            Bullet bullet = ballQueue.Dequeue();
             bullet.isActive = true;
             bullet.gameObject.SetActive(true);
             bullet.gameObject.transform.position = greenBox.transform.position; // 초록색 박스의 위치로 설정
